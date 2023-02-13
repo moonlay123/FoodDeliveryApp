@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    tools:context=".fragment.LoginFragment">
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email address"
+        android:textSize="15sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="40dp"
+        />
+    <EditText
+        android:id="@+id/enter_adr"
+        android:layout_below="@id/address"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:hint="enter your email"
+        android:inputType="textEmailAddress"
+        />
+    <TextView
+        android:id="@+id/password"
+        android:layout_below="@id/enter_adr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        />
+    <EditText
+        android:id="@+id/enter_pas"
+        android:layout_below="@id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        />
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_below="@id/enter_pas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot login or password?"
+        android:textSize="15sp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/orange"
+        />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_bg"
+        android:layout_below="@id/forgot"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Login"
+        android:textSize="15sp"
+        />
+
+</RelativeLayout>
